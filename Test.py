@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import accuracy_score, confusion_matrix
 
 # Load the saved model
-state_dict = torch.load('/Users/yonasmulu/Desktop/Arpro/trained.pt')
+state_dict = torch.load('trained.pt')
 
 # Create an instance of the model with the same architecture
 model = models.vgg16(pretrained=False)
@@ -32,7 +32,7 @@ transform = transforms.Compose([
 ])
 
 # Load the input image
-img = Image.open('/Users/yonasmulu/Desktop/Arpro/rt.jpeg')
+img = Image.open('rt.jpeg')
 
 # Convert the image to RGB if it's grayscale
 if img.mode != 'RGB':

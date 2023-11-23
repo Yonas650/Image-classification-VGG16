@@ -84,9 +84,9 @@ def main():
     ])
 
     # Load data
-    train_data = datasets.ImageFolder('/Users/yonasmulu/Desktop/Arpro/train/', transform=train_transform)
+    train_data = datasets.ImageFolder('train/', transform=train_transform)
     train_loader = torch.utils.data.DataLoader(train_data, batch_size=32, shuffle=True)
-    val_data = datasets.ImageFolder('/Users/yonasmulu/Desktop/Arpro/val/', transform=val_transform)
+    val_data = datasets.ImageFolder('val/', transform=val_transform)
     val_loader = torch.utils.data.DataLoader(val_data, batch_size=32, shuffle=False)
 
     # Set up loss function and optimizer
@@ -108,7 +108,7 @@ def main():
 
         if val_loss < best_val_loss:
             best_val_loss = val_loss
-            torch.save(vgg.state_dict(), '/Users/yonasmulu/Desktop/Arpro/trained.pt')
+            torch.save(vgg.state_dict(), 'trained.pt')
             print('Model saved successfully.')
 
 if __name__ == "__main__":
