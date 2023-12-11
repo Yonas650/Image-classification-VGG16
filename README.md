@@ -19,17 +19,21 @@ Matplotlib
 scikit-learn
 
 ## Setup and Usage
+
 1. Environment Setup:
 
 Ensure Python 3.x is installed.
 Install required libraries: pip install -r requirements.txt.
+
 2. Training the Model:
 
 Run python model/train.py to start the training process.
 Model checkpoints and logs will be saved in trained_models/.
+
 3. Evaluating the Model:
 
 Evaluate the trained model using python model/evaluate.py.
+
 4. Running Predictions:
 
 Use python model/predict.py to run predictions on new images.
