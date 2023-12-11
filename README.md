@@ -27,16 +27,12 @@ Install required libraries: pip install -r requirements.txt.
 
 2. Training the Model:
 
-Run python model/train.py to start the training process.
-Model checkpoints and logs will be saved in trained_models/.
+Run python train.py to start the training process.
+Model checkpoints and logs will be saved in trained.pt
 
-3. Evaluating the Model:
+3. Running Predictions:
 
-Evaluate the trained model using python model/evaluate.py.
-
-4. Running Predictions:
-
-Use python model/predict.py to run predictions on new images.
+Use python test.py to run predictions on new images.
 
 ## Results and Discussion
 Train Accuracy= 100%, 
